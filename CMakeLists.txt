@@ -20,7 +20,7 @@ set(BUILD_${LIBRARY_TARGET_NAME}_EXAMPLE ON)
 # build the matlab binding
 set(BUILD_${LIBRARY_TARGET_NAME}_MATLAB OFF)
 # build the python binding
-set(BUILD_${LIBRARY_TARGET_NAME}_PYTHON OFF)
+set(BUILD_${LIBRARY_TARGET_NAME}_PYTHON ON)
 
 
 ### CMake Cache (build configuration) variables -- these are set interactively in the CMake GUI, and cached in CMakeCache ###
@@ -97,7 +97,7 @@ install(  DIRECTORY ${PROJECT_SOURCE_DIR}/dependences/Rosen_optimization/include
           PATTERN "CMakeFiles" EXCLUDE
 )
 
-# include_directories(${Optimization_INCLUDE_DIR})
+include_directories(${Optimization_INCLUDE_DIR})
 
 
 if(DO_GNC)

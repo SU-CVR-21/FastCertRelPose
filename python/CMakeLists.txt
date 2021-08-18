@@ -3,6 +3,8 @@ cmake_minimum_required(VERSION 3.10)
 
 set(PYBIND11_PYTHON_VERSION ${RELATIVEPOSEPYTHON_VERSION})
 
+find_package(pybind11 CONFIG)
+
 set(ROBUST_ESTIMATION ON)
 
 project(relative_pose_python_bindings)

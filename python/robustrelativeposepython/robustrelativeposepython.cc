@@ -57,7 +57,7 @@ PYBIND11_MODULE(robustrelativeposepython, m) {
                          None = 0,
                          TLS,
                          GM,
-                         TEMP,
+                        // TEMP,
                          WELSCH,
                          TUKEY,
                          Any
@@ -69,7 +69,7 @@ PYBIND11_MODULE(robustrelativeposepython, m) {
       .value("None", Essential::GNCRobustFunction::None)
       .value("TLS", Essential::GNCRobustFunction::TLS)
       .value("GM", Essential::GNCRobustFunction::GM)
-      .value("TEMP", Essential::GNCRobustFunction::TEMP)
+      // .value("TEMP", Essential::GNCRobustFunction::TEMP)
       .value("WELSCH", Essential::GNCRobustFunction::WELSCH)
       .value("TUKEY", Essential::GNCRobustFunction::TUKEY)
       .value("Any", Essential::GNCRobustFunction::Any);
